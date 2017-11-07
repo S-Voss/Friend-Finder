@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- Loads the necessary third party libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Answer Some Questions About Yourself Real Fast!</h3>
+                </div>
+                <div class="panel-body">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" name="" id="name" class="form-control" required>
+                    <br>
+                    <label for="question-one">Rank on a scale of 1-5 how much you enjoy
+                        hiking.</label>
+                    <select data-placeholder="" class="chosen-select" id="q1">
+                        <!-- add values = option to help match user with db user easier -->
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-two">Rank on a scale of 1-5 how much you enjoy
+                        trying new restaurants.</label>
+                        <select data-placeholder="" class="chosen-select" id="q2">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-three">Rank on a scale of 1-5 how much you enjoy
+                        being in the great outdoors.</label>
+                        <select data-placeholder="" class="chosen-select" id="q3">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-four">Rank on a scale of 1-5 how much you enjoy
+                        long walks.</label>
+                        <select data-placeholder="" class="chosen-select" id="q4">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-five">Rank on a scale of 1-5 how much you enjoy
+                        water sports and the beach.</label>
+                        <select data-placeholder="" class="chosen-select" id="q5">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-six">Rank on a scale of 1-5 how much you enjoy
+                        biking.</label>
+                        <select data-placeholder="" class="chosen-select" id="q6">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-seven">Rank on a scale of 1-5 how much you enjoy
+                        art galleries or museums.</label>
+                        <select data-placeholder="" class="chosen-select" id="q7">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-eight">Rank on a scale of 1-5 how much you enjoy
+                        gourmet coffees and teas.</label>
+                        <select data-placeholder="" class="chosen-select" id="q8">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-nine">Rank on a scale of 1-5 how much you enjoy
+                        trying new craft breweries and wineries.</label>
+                        <select data-placeholder="" class="chosen-select" id="q9">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <br>
+                    <label for="question-ten">Rank on a scale of 1-5 how much you enjoy
+                        weekend getaways.</label>
+                        <select data-placeholder="" class="chosen-select" id="q10">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                    <span id="helpBlock" class="help-block">By hiking we mean day trips and the occassional
+                        overnight trip. We do not mean that you enjoy climbing Mt. Everest every summer.
+                    </span>
+                    <button type="submit" class="btn btn-primary btn-large btn-block" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- MODAL -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    $("#submit").on("click", function(event) {
+    event.preventDefault();
+    
+          // Here we grab the form elements
+        var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+            ]
+        };
+    
+          //console.log(newSurvey);
+    
+        var currentURL = window.location.origin;
+
+        $.post("/api/friends", userData, function(data) {
+            //Display the match's information by using the response returned from the post
+            $("#matchName").text(data.name);
+            $("#matchImg").attr("src", data.photo);
+
+            //Make the modal with the above information pop up after form submit
+            $("#resultsModal").modal("toggle");
+        })
+    });
+    
+    </script>
+</html>
